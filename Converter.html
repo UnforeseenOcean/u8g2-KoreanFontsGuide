@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Original code from https://github.com/r12a/app-conversion, trimmed down to fit into one file and serve limited functions. Page will mostly still work. -->
 <meta charset="utf-8" />
 <title>Unicode code converter</title>
 <meta name="description" content="Helps you convert between Unicode character numbers, characters, UTF-8 and UTF-16 code units in hex, percent escapes,and Numeric Character References (hex and decimal)." />
@@ -1739,7 +1738,7 @@ function convertCharStr2CP ( textString, parameters, pad, type, mixed ) {
                             break
                 case 'unicode': number = chars[i].codePointAt(0).toString(16).toUpperCase()
                             if (pad>0) while (number.length < pad) number = '0'+number
-                            str += 'U+'+number +", "
+                            str += '$'+number +", "
                             break
                 case 'dec': number = cp
                             if (!mixed) str += number+' '
