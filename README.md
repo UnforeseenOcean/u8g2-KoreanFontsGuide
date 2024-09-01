@@ -15,7 +15,7 @@ Please start from step {step} to skip the mapping file generation and jump strai
 9. Open Converter.html
 10. Copy the string and put it in the converter program
 11. You'll have something that looks like: `0xAC00, 0xB098, 0xB2E4`
-12. Add `0x0021, 0x007E,` at the beginning
+12. Add `$0021-S007E,` at the beginning
 13. Save as `mymap.map`
 14. Make font at first using commands:
 ```
